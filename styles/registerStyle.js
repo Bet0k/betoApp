@@ -1,0 +1,78 @@
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 25,
+    backgroundColor: '#f5f5f5',
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: '700',
+    marginBottom: 35,
+    textAlign: 'center',
+    color: '#1a1a1a',
+  },
+  input: {
+    height: 55,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 12,
+    paddingHorizontal: 15,
+    marginBottom: 18,
+    backgroundColor: '#fff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.1,
+    shadowRadius: 6,
+    elevation: 3,
+    fontSize: 16,
+    color: '#1a1a1a',
+  },
+  inputError: {
+    borderColor: 'red',
+    borderWidth: 1.5,
+  },
+  errorText: {
+    color: 'red',
+    fontSize: 12,
+    marginBottom: 8,
+    marginLeft: 5,
+  },
+  button: {
+    backgroundColor: '#3399ff',
+    paddingVertical: 14,
+    paddingHorizontal: 20,
+    borderRadius: 14,
+    alignItems: 'center',
+    marginTop: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: '600',
+    fontSize: 18,
+  },
+  snackbar: {
+    backgroundColor: '#4CAF50',
+    borderRadius: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    marginBottom: 10,
+  },
+  snackbarContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  snackbarText: {
+    color: '#fff',
+    fontWeight: '600',
+    fontSize: 15,
+    flexShrink: 1,
+  },
+});
