@@ -1,9 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Provider as PaperProvider } from 'react-native-paper'; // <-- IMPORTANTE
+import { Provider as PaperProvider } from 'react-native-paper';
 
-// Importamos las pantallas
 import WelcomeScreen from './screens/WelcomeScreen';
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
@@ -16,7 +15,7 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <PaperProvider> {/* <-- ENVOLVER TODO EL NAVIGATION */}
+    <PaperProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Welcome">
           <Stack.Screen 
