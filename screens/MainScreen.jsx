@@ -29,7 +29,6 @@ const MainScreen = ({ navigation }) => {
     fetchProducts();
   }, []);
 
-  // Ahora devuelve la cantidad actual del producto en el carrito
   const handleAddToCart = async (product) => {
     const userId = auth.currentUser.uid;
     const cartDocRef = doc(db, 'carts', `${userId}_${product.id}`);
@@ -48,7 +47,7 @@ const MainScreen = ({ navigation }) => {
       quantity: newQuantity,
     }, { merge: true });
 
-    return newQuantity; // devuelve cantidad actual para snackbar
+    return newQuantity;
   };
 
   const handleLogout = async () => {
