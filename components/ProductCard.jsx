@@ -10,7 +10,7 @@ const ProductCard = ({ product, onAddToCart }) => {
 
   const handleAdd = async () => {
     setLoading(true);
-    const updatedQuantity = await onAddToCart(product); // ahora devuelve la cantidad
+    const updatedQuantity = await onAddToCart(product);
     setQuantityAdded(updatedQuantity);
     setLoading(false);
     setSnackbarVisible(true);
