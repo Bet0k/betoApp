@@ -16,7 +16,7 @@ const OrderScreen = () => {
       const snapshot = await getDocs(q);
       const orderList = snapshot.docs
         .map(doc => ({ id: doc.id, ...doc.data() }))
-        .sort((a, b) => b.createdAt?.seconds - a.createdAt?.seconds); // pedidos recientes primero
+        .sort((a, b) => b.createdAt?.seconds - a.createdAt?.seconds);
       setOrders(orderList);
     };
     fetchOrders();
